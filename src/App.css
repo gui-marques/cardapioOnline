@@ -1,6 +1,6 @@
 .slider{
     position: relative;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@
     width: 500px;
     height: 600px;
     border-radius: 10px;
-    margin-left: 40rem;
+    margin-left: -150rem;
     margin-top: 5rem;
 }
 .right-arrow {
