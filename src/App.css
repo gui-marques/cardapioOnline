@@ -1,23 +1,25 @@
+
 .slider{
     position: relative;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 .image {
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 500px;
     border-radius: 10px;
-    margin-left: -150rem;
-    margin-top: 5rem;
+    margin-left: 30rem;
+    margin-top: 4rem;
 }
 .right-arrow {
     position: absolute;
     top: 50%;
     right: 32px;
     font-size: 3rem;
-    color: #000;
+    color: #fff;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -25,9 +27,9 @@
 .left-arrow {
     position: absolute;
     top: 50%;
-    left: 32px;
+    left: 3px;
     font-size: 3rem;
-    color: #000;
+    color: #fff;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -48,8 +50,8 @@
         position: absolute;
         top: 60%;
         left: 2px;
-        font-size: 4rem;
-        color: #000;
+        font-size: 3rem;
+        color: #fff;
         z-index: 10;
         cursor: pointer;
         user-select: none;
@@ -57,9 +59,9 @@
     .right-arrow {
         position: absolute;
         top: 60%;
-        right: -120px;
-        font-size: 4rem;
-        color: #000;
+        right: -90px;
+        font-size: 3rem;
+        color: #fff;
         z-index: 10;
         cursor: pointer;
         user-select: none;
@@ -70,7 +72,7 @@
         border-radius: 10px;
        
         margin-top: 7rem;
-        margin-left: 5.5rem;
+        margin-left: 4.5rem;
     }
 }
 

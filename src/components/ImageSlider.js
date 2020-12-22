@@ -19,9 +19,13 @@ if(!Array.isArray(slides) || slides.length <= 0 ) {
     return null;
 }
     return (
+      
+
+        
  <section clasName='slider'>
      <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
      <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+    
     
 
     {SliderData.map((slide, index) => {
@@ -40,6 +44,7 @@ if(!Array.isArray(slides) || slides.length <= 0 ) {
  
 
 </section>
+
     );
 }
 
