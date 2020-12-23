@@ -1,23 +1,29 @@
-
+.logo{
+    position: absolute;
+    display: flex;
+    width: 400px;
+   
+}
 .slider{
     position: relative;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    
 }
 .image {
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 573px;
     border-radius: 10px;
-    margin-left: 30rem;
-    margin-top: 4rem;
+    margin-left: 28rem;
+    margin-top:  5rem;
+    
 }
 .right-arrow {
     position: absolute;
     top: 50%;
-    right: 32px;
+    right: 123px;
     font-size: 3rem;
     color: #fff;
     z-index: 10;
@@ -27,7 +33,7 @@
 .left-arrow {
     position: absolute;
     top: 50%;
-    left: 3px;
+    left: 123px;
     font-size: 3rem;
     color: #fff;
     z-index: 10;
@@ -37,42 +43,190 @@
 .slide{
     opacity: 0;
     transition-duration: 1s ease ;
+    
 }
 
 .slide.active {
     opacity: 1;
-    transition-duration: 1s ;
-    transform: scale(1.08);
+    transition-duration: 1.5s ;
+    transform: scale(1.0);
+    
+
 }
 
-@media(max-width: 380px) {
-	.left-arrow {
+
+ /* Telefones em paisagem e abaixo */
+@media (min-width: 360px) and (max-width: 480px) {
+       /*estilos*/
+    .logo{
         position: absolute;
-        top: 60%;
-        left: 2px;
-        font-size: 3rem;
-        color: #fff;
-        z-index: 10;
-        cursor: pointer;
-        user-select: none;
+        display: flex;
+        width: 600px;
+        margin-top: 2rem;
+    }
+    .slider{
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .image {
+        width: 390px;
+        height: 600px;
+        border-radius: 10px;
+        margin-left: 6rem;
+        margin-top: 17rem;
     }
     .right-arrow {
         position: absolute;
-        top: 60%;
-        right: -90px;
-        font-size: 3rem;
+        top: 80%;
+        right: -230px;
+        font-size: 4rem;
         color: #fff;
         z-index: 10;
         cursor: pointer;
         user-select: none;
     }
-    .image {
-        width: 300px;
-        height: 500px;
-        border-radius: 10px;
-       
-        margin-top: 7rem;
-        margin-left: 4.5rem;
+    .left-arrow {
+        position: absolute;
+        top: 80%;
+        left: 5px;
+        font-size: 4rem;
+        color: #fff;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
     }
+    .slide{
+        opacity: 0;
+        transition-duration: 1s ease ;
+    }
+    
+    .slide.active {
+        opacity: 1;
+        transition-duration: 1s ;
+        transform: scale(1.08);
+    }
+    
+ }
+ /* Telefones em paisagem a tablet em retrato */
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* estilos aqui */
+        /*estilos*/
+        .logo{
+            position: absolute;
+            display: flex;
+            width: 600px;
+            margin-top: 2rem;
+        }
+        .slider{
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .image {
+            width: 390px;
+            height: 600px;
+            border-radius: 10px;
+            margin-left: 12rem;
+            margin-top: 17rem;
+        }
+        .right-arrow {
+            position: absolute;
+            top: 55%;
+            right: 4px;
+            font-size: 6rem;
+            color: #fff;
+            z-index: 10;
+            cursor: pointer;
+            user-select: none;
+        }
+        .left-arrow {
+            position: absolute;
+            top: 55%;
+            left: 17px;
+            font-size: 6rem;
+            color: #fff;
+            z-index: 10;
+            cursor: pointer;
+            user-select: none;
+        }
+        .slide{
+            opacity: 0;
+            transition-duration: 1s ease ;
+        }
+        
+        .slide.active {
+            opacity: 1;
+            transition-duration: 1s ;
+            transform: scale(1.08);
+        }
+        
 }
 
+/* Desktop grande */
+@media (min-width: 1024px) and (max-width: 1365px) {
+   /* estilos aqui */
+
+     /*estilos*/
+     .logo{
+        position: absolute;
+        display: flex;
+        width: 600px;
+        margin-top: 2rem;
+    }
+    .slider{
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .image {
+        width: 590px;
+        height: 800px;
+        
+        border-radius: 10px;
+        margin-left: 15rem;
+        margin-top: 20rem;
+    }
+    .right-arrow {
+        position: absolute;
+        top: 55%;
+        right: 4px;
+        font-size: 8rem;
+        color: #fff;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+    }
+    .left-arrow {
+        position: absolute;
+        top: 55%;
+        left: 17px;
+        font-size: 8rem;
+        color: #fff;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+    }
+    .slide{
+        opacity: 0;
+        transition-duration: 1s ease ;
+    }
+    
+    .slide.active {
+        opacity: 1;
+        transition-duration: 1s ;
+        transform: scale(1.08);
+    }
+    
+}
